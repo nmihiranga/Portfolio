@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import recipeapp from "@/public/recipeapp.png";
+import magneto from "@/public/magneto.png";
+import ytclone from "@/public/ytclone.png";
 
 export const links = [
   {
@@ -62,25 +62,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Full Stack Recipe app",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Recipe app that can search, view, add, and manage favorite recipes. I have used React for the front end, Node.js with Prisma for the back end, and PostgreSQL database.",
+    tags: ["Node js", "React js", "PostgreSQL", "Typescript"],
+    imageUrl: recipeapp,
   },
   {
-    title: "rmtDev",
+    title: "Magneto Online Store demo",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Tested Account creation, Login, Search products, Filter products, Add to cart, and Payouts using Selenium with TestNG.",
+    tags: ["Java", "TestNG", "Selenium", "Test cases", "Test automation"],
+    imageUrl: magneto,
   },
   {
-    title: "Word Analytics",
+    title: "YouTube clone",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A simple YouTube clone built using HTML and CSS. This is not a fully functional YouTube clone.",
+    tags: ["HTML", "CSS"],
+    imageUrl: ytclone,
   },
 ] as const;
 
