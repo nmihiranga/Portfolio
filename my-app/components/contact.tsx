@@ -17,12 +17,12 @@ export default function Contact() {
     initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}} viewport={{once: true}}>
       <h2 className='text-3xl font-medium mb-8'>Contact me</h2>
 
-      <p className='text-gray-700 -mt-5'>Fell free to contact me at {" "}
+      <p className='text-gray-700 -mt-5 dark:text-white/80'>Fell free to contact me at {" "}
         <a className='underline' href='mailto:mihiranganayana@gmail.com'>mihiranganayana@gmail.com</a> {" "}
         or through this form.
       </p>
 
-      <form className='mt-10 flex flex-col' 
+      <form className='mt-10 flex flex-col dark:text-black' 
         action={async (formData) => {
           const {data, error} = await sendEmail(formData);
 
@@ -39,7 +39,7 @@ export default function Contact() {
           name='senderEmail'
           required maxLength={500} 
           placeholder='Your email' 
-          className='px-4 h-14 rounded-lg border border-black/10' 
+          className='px-4 h-14 rounded-lg border border-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' 
         />
 
         <textarea 
@@ -47,7 +47,7 @@ export default function Contact() {
           name='message' 
           maxLength={5000} 
           placeholder='Your message' 
-          className='h-52 my-3 rounded-lg border border-black/10 p-4' 
+          className='h-52 my-3 rounded-lg border border-black/10 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' 
         />
 
         <SubmitBtn />
