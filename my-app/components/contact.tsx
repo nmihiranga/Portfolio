@@ -17,7 +17,7 @@ export default function Contact() {
     initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}} viewport={{once: true}}>
       <h2 className='text-3xl font-medium mb-8'>Contact me</h2>
 
-      <p className='text-gray-700 -mt-5 dark:text-white/80'>Fell free to contact me at {" "}
+      <p className='text-gray-700 -mt-5 dark:text-white/80'>Feel free to contact me at {" "}
         <a className='underline' href='mailto:mihiranganayana@gmail.com'>mihiranganayana@gmail.com</a> {" "}
         or through this form.
       </p>
