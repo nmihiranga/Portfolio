@@ -24,9 +24,9 @@ export default function Project({
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <a href={link} target='_blank'>
     <motion.div ref={ref} style={{scale: scaleProgress, opacity: opacityProgress}}
     className="group mb-3 sm:mb-8 last:mb-0">
+      <a href={link} target='_blank'>
       <section className='bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] 
       hover:bg-gray-200 transition sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white'>
         
@@ -44,10 +44,11 @@ export default function Project({
           </ul>
         </div>
         
+        
         <Image src={imageUrl} alt='' quality={95} className='absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 
         group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40 hidden sm:block'/>
       </section>
+      </a>
     </motion.div>
-    </a>
   )
 }
