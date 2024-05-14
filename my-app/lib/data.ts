@@ -3,7 +3,7 @@ import magneto from "@/public/magneto.png";
 import ytclone from "@/public/ytclone.png";
 import seleniumCucumber from "@/public/SeleniumCucumber.png";
 import seleniumPython from "@/public/seleniumPython.png";
-import api from "@/public/api.png";
+import api from "@/public/Api.png";
 import seleniumBehave from "@/public/seleniumBehave.png";
 
 export const links = [
