@@ -37,7 +37,7 @@ export const projectsData = [
   {
     title: "Selenium Behave BDD",
     description:
-      "Selenium Python project consists three main features with ten test scenarios. Used Behave BDD framework with Page Object Model along with Data Driven Test.",
+      "Selenium Python project consists three main Features with ten test Scenarios. Used Behave BDD framework with Page Object Model along with Data Driven Test.",
     tags: ["Selenium", "Python", "Behave", "POM", "Allure Report"],
     imageUrl: seleniumBehave,
     link: "https://github.com/nmihiranga/Selenium-BehaveBDD-project"
